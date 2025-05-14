@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doability.app Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>doability<span style="background: var(--orange); padding: 0.2rem 0.5rem; border-radius: 8px;">.app</span></h2>
+    <div class="point"><i class="fas fa-check-circle"></i> Instant domain & company name availability checks</div>
+    <div class="point"><i class="fas fa-check-circle"></i> AI-powered "doability" scoring system</div>
+    <div class="point"><i class="fas fa-check-circle"></i> Structured guidance to refine your business model</div>
+  </div>
+  <div class="main-content">
+    <div class="topbar">
+      <i class="fas fa-bell"></i>
+      <div class="profile" onclick="toggleDropdown()">U
+        <div class="dropdown" id="dropdown">
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+    <div class="welcome">Welcome to Doability.app!</div>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-lightbulb"></i>
+        New Ideas
+        <div><a class="card-button" href="Final main work.html">Submit</a></div>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        In Progress
+        <div><a class="card-button" href="in-progress.html">View</a></div>
+      </div>
+      <div class="card">
+        <i class="fas fa-globe"></i>
+        Domain Checker
+        <div><a class="card-button" href="Domain.html">Check</a></div>
+      </div>
+      <div class="card">
+        <i class="fas fa-handshake"></i>
+        Collaboration Hub
+        <div><a class="card-button" href="collaboration-hub.html">Collaborate</a></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
